@@ -95,6 +95,7 @@
     </Compile>
     <Compile Include="BL\AwardPoint.cs" />
     <Compile Include="BL\BeginMatch.cs" />
+    <Compile Include="BL\CalculateTactics.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -104,6 +105,7 @@
     </Compile>
     <Compile Include="Model\Match.cs" />
     <Compile Include="Model\Point.cs" />
+    <Compile Include="Model\Shot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>

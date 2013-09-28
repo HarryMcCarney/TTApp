@@ -11,14 +11,30 @@ namespace TTApp.Model
 
         public int PlayerPoints { get; set; }
         public int OpponentPoints { get; set; }
+        [Ignore]
+        public List<Point> Points { get; set; }
 
-        //public Point[] Points { get; set; }
+        [Ignore]
+        public List<Shot> Shots { get; set; }
+
         public bool ServeFirst { get; set; }
 
 
         public Match Create()
         {
-            var match = new Match(){ServeFirst = true};
+            var match = new Match(){ServeFirst = true, Points = new List<Point>(),
+                Shots = new List<Shot>()
+                    {
+                        new Shot(){Position =0 },
+                        new Shot(){Position =1 },
+                        new Shot(){Position =2},
+                        new Shot(){Position =3 },
+                        new Shot(){Position =4 },
+                        new Shot(){Position =5 },
+                        new Shot(){Position =10 }
+                    }
+            
+            };
             return match;
 
 

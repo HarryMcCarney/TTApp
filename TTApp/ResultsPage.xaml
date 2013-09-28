@@ -28,6 +28,14 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Name="Postion0" Margin="20,10,243,516" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="Postion1"  Margin="20,138,243,388" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="Postion2"   Margin="253,10,10,516" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="Postion3"  Margin="253,138,10,388" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="Postion4"   Margin="20,381,243,145" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="Postion5"   Margin="253,251,10,275" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="Postion10"  Margin="10,251,253,275" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Name="Postion11"   Margin="238,381,25,145" Style="{StaticResource PhoneTextTitle1Style}"/>
 
         </Grid>
     </Grid>

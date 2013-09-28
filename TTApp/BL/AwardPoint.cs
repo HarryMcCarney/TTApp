@@ -1,4 +1,5 @@
-﻿using TTApp.Model;
+﻿using System.Collections.Generic;
+using TTApp.Model;
 
 namespace TTApp.BL
 {
@@ -6,14 +7,19 @@ namespace TTApp.BL
     {
         public void Award(int WinningShot)
         {
-            if (WinningShot%2 == 0)
+
+            var match = Settings.Instance.CurrentMatch;
+            match.Points.Add(new Point(){LastShot = WinningShot});
+
+            
+            if (WinningShot % 2 == 0)
             {
-                Settings.Instance.CurrentMatch.OpponentPoints += 1;
+                match.OpponentPoints += 1;
 
             }
             else
             {
-                Settings.Instance.CurrentMatch.PlayerPoints += 1;
+                match.PlayerPoints += 1;
             }
 
 

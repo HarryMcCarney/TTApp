@@ -29,11 +29,16 @@ namespace TTApp
             var button = sender as Button;
             var point = int.Parse(button.Tag as String);
             new AwardPoint().Award(point);
+            
         
             ScoreBoard.Text = score;
 
             if (Settings.Instance.CurrentMatch.Finished)
+            {
+                new  CalculateTactics().calc();
                 NavigationService.Navigate(new Uri("/ResultsPage.xaml", UriKind.Relative));
+            }
+            
 
 
         }
